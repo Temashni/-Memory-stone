@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
 .container {
     width: 1200px;
@@ -32,6 +38,12 @@
     .header-info {
         width: 100%;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .header-info {
+        width: calc(100% - 30px);
     }
 }
 
@@ -646,6 +658,12 @@ justify-content: space-between;
     }
 }
 
+@media screen and (max-width:1250px) {
+    .header-menu__block {
+        width: calc(100% - 30px);
+    }
+}
+
 .header-menu__container {
     width: 820px;
 
@@ -799,6 +817,12 @@ justify-content: space-between;
 @media screen and (max-width:1024px) {
     .about-us{
         width: 100%;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .about-us{
+        width: calc(100% - 30px);
     }
 }
 
@@ -1014,6 +1038,17 @@ justify-content: space-between;
     }
 }
 
+@media screen and (max-width:1250px) {
+    .about-us__choise-text{
+        width: calc(100% - 30px); 
+        text-align: center;
+    }
+
+    br {
+        display: none;
+    }
+}
+
 @media screen and (max-width:768px) {
     .about-us__text {
         width: 100%;
@@ -1062,6 +1097,12 @@ justify-content: space-between;
     .about-us__text {
         width: calc(100% - 30px);
         text-align: center;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .about-us__text {
+        width: calc(100% - 30px);
     }
 }
 
@@ -1175,12 +1216,20 @@ justify-content: space-between;
 
 .footer {
 
-width: 100%;
+    width: 100%;
 
 
-margin-top: 68px;
+    margin-top: 68px;
 
-background: #545D6D;
+    background: #545D6D;
+
+
+    margin-bottom: 0;
+    margin-top: auto;
+
+    position: relative;
+    top: 60px;
+  
 }
 @media screen and (max-width:768px) {
     .footer {
@@ -1205,7 +1254,6 @@ background: #545D6D;
 
     display: flex;
     justify-content: space-between;
-    
 }
 
 @media screen and (max-width:1024px) {
@@ -1214,6 +1262,11 @@ background: #545D6D;
     }
 }
 
+@media screen and (max-width:1250px) {
+    .footer__info  {
+        width: calc(100% - 30px);
+    }
+}
 
 
 .footer__info-container {
@@ -1397,6 +1450,12 @@ background: #545D6D;
 }
 
 @media screen and (max-width:1024px) {
+    .footer__creater {
+        width: calc(100% - 30px);
+    }
+}
+
+@media screen and (max-width:1250px) {
     .footer__creater {
         width: calc(100% - 30px);
     }
