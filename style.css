@@ -49,7 +49,7 @@ body {
 
 @media screen and (max-width:1250px) {
     .header-info {
-        width: 100%;
+        width: calc(100% - 30px);
     }
 }
 
