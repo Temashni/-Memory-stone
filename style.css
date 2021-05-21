@@ -41,9 +41,21 @@ body {
     }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (max-width:1250px) {
     .header-info {
         width: calc(100% - 30px);
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .header-info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .header-info {
+        width: 100%;
     }
 }
 
