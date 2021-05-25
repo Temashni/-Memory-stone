@@ -13,132 +13,133 @@
 </head>
 <body id="scroll">
     <div class="header-info container">
-            <input class="header-info__container">
-                <div class="header-info__logo">
-                    <a href="#!"><img class="header-info__logo-img" src="images/stone-logo1x.png" srcset="images/stone-logo2x.png"></a>
-                    <a href="#!" class="header-info__logo-text"><p>Камень Памяти</p></a>
+        <div class="header-info__container">
+            <div class="header-info__logo">
+                <a href="#!"><img class="header-info__logo-img" src="images/stone-logo1x.png" srcset="images/stone-logo2x.png"></a>
+                <a href="#!" class="header-info__logo-text"><p>Камень Памяти</p></a>
+            </div>
+            <div class="header-info__search">
+                <input class="header-info__search-text" type="search" name="q" placeholder="Найти на сайте"> 
+                <button class="header-info__search-button" type="pointer">Поиск</button>
+            </div>
+            <div class="header-info__address">
+                <ul class="header-info__address-number"> 
+                    <li class="header-info__address-text"><a href="#!" class="header-info__address-text text"> г. Саратов, ул. Вольская, 68</a><img class="triangle" src="images/dropdown1x.png" srcset="images/dropdown2x.png">
+                        <div class="header-info__dropdown">
+                            <a href="" class="header-info__dropdown-text">г. Саратов, ул. Вольская 68</a>
+                            <a href="" class="header-info__dropdown-text">г. Саратов, ул. Рижская, 31а</a>
+                            <a href="" class="header-info__dropdown-text">г. Энгельс, ул. Петровская, 57</a>
+                            <a href="" class="header-info__dropdown-text">г. Вольск, ул. Водопьяного, 126</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-info__social-network">
+                <a href="#!"><span class="header-info__social-network__img-inst"></span></a>
+                <a href="#!"><span class="header-info__social-network__img-vk"></span></a>
+            </div>
+            <div class="header-info__phone">
+                <a href="#!" class="header-info__phone-button text"><span class="header-info__phone-call">Звонок</span></a>
+                <a href="#!" class="header-info__phone-number"><p>8 (8452) 71-17-12</p></a>
+            </div>
+        </div>
+
+    <div class="header-info__mobile">
+        <div class="header-info__mobile-container">
+            <div class="header-info__mobile-logo">
+                <a href="#!"><img class="header-info__mobile-logo-img" src="images/stone-logo1x.png" srcset="images/stone-logo2x.png"></a>
+                <a href="#!" class="header-info__mobile-logo-text"><p>Камень Памяти</p></a>
+            </div>
+            <div class="header-info__mobile-cart">
+                <a href="#!"><img class="header-info__mobile-cart-search" src="images/search.svg"></a>
+            </div>
+            <div class="header-info__mobile-cart">
+                <a href=""><img class="header-info__mobile-cart-img" src="images/mobile-cart1x.png" srcset="images/mobile-cart2x.png"></a>
+            </div>
+            <div class="wrapper">
+                <div class="xbox">
+                    <button class="xbox-img" onclick="show()"></button>
                 </div>
-                <div class="header-info__search">
-                    <input class="header-info__search-text" type="search" name="q" placeholder="Найти на сайте"> 
-                    <input class="header-info__search-button" type="submit" value="Поиск">
-                </div>
-                <div class="header-info__address">
-                    <ul class="header-info__address-number"> 
-                        <li class="header-info__address-text">г. Саратов, ул. Вольская, 68 <img class="triangle" src="images/dropdown1x.png" srcset="images/dropdown2x.png">
-                            <div class="header-info__dropdown">
+                <div class="modal" id="modal">
+                  <div class="window">
+                      <div class="header-info__container">
+                        <div class="header-info__mobile-logo">
+                            <a href="#!"><img class="header-info__mobile-logo-img" src="images/stone-logo1x.png" srcset="images/stone-logo2x.png"></a>
+                            <a href="#!" class="header-info__mobile-logo-text"><p>Камень Памяти</p></a>
+                        </div>
+                        <div class="header-info__mobile-cart">
+                            <a href="#!"><img class="header-info__mobile-cart-search" src="images/search.svg"></a>
+                        </div>
+                        <div class="header-info__mobile-cart">
+                            <a href="#!"><img class="header-info__mobile-cart-img" src="images/mobile-cart1x.png" srcset="images/mobile-cart2x.png"></a>
+                        </div>
+                        <button class="closed"  onclick="unshow()"><img src="images/closed.svg"></button>
+                    </div>
+                    <ul class="header-mobile__menu">
+                        <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">О нас</a></li>
+                        <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">Оплата и доставка</a></li>
+                        <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">Установка</a></li>
+                        <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">Скидки</a></li>
+                        <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">Наши работы</a></li>
+                        <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">Контакты</a></li>
+                    </ul>
+                    <div class="header-mobile__menu-adress-container">
+                        <li class="header-mobile__menu-adress-text">г. Саратов, ул. Вольская, 68 <img class="triangle" src="images/dropdown1x.png" srcset="images/dropdown2x.png">
+                            <div class="header-mobile__menu-adress">
                                 <a href="" class="header-info__dropdown-text">г. Саратов, ул. Вольская 68</a>
                                 <a href="" class="header-info__dropdown-text">г. Саратов, ул. Рижская, 31а</a>
                                 <a href="" class="header-info__dropdown-text">г. Энгельс, ул. Петровская, 57</a>
                                 <a href="" class="header-info__dropdown-text">г. Вольск, ул. Водопьяного, 126</a>
                             </div>
                         </li>
-                    </ul>
-                </div>
-                <div class="header-info__social-network">
-                    <a href="#!"><img class="header-info__social-network__img" src="images/instagram1x.png" srcset="images/instagram2x.png"></a>
-                    <a href="#!"><img class="header-info__social-network__img" src="images/vk-social-logotype1x.png" srcset="images/vk-social-logotype2x.png"></a>
-                </div>
-                <div class="header-info__phone">
-                    <button class="header-info__phone-button"> <a href="#!" class="text"><span class="header-info__phone-call">Звонок</span></a></button>
-                    <a href="#!" class="header-info__phone-number"><p>8 (8452) 71-17-12</p></a>
-                </div>
-            </div>
-
-        <div class="header-info__mobile">
-            <div class="header-info__mobile-container">
-                <div class="header-info__mobile-logo">
-                    <a href="#!"><img class="header-info__mobile-logo-img" src="images/stone-logo1x.png" srcset="images/stone-logo2x.png"></a>
-                    <a href="#!" class="header-info__mobile-logo-text"><p>Камень Памяти</p></a>
-                </div>
-                <div class="header-info__mobile-cart">
-                    <a href="#!"><img class="header-info__mobile-cart-search" src="images/search.svg"></a>
-                </div>
-                <div class="header-info__mobile-cart">
-                    <a href=""><img class="header-info__mobile-cart-img" src="images/mobile-cart1x.png" srcset="images/mobile-cart2x.png"></a>
-                </div>
-                <div class="wrapper">
-                    <div class="xbox">
-                        <button class="xbox-img" onclick="show()"><img  src="images/mobile-menu-button.svg"></button>
                     </div>
-                    <div class="modal" id="modal">
-                      <div class="window">
-                          <div class="header-info__container">
-                            <div class="header-info__mobile-logo">
-                                <a href="#!"><img class="header-info__mobile-logo-img" src="images/stone-logo1x.png" srcset="images/stone-logo2x.png"></a>
-                                <a href="#!" class="header-info__mobile-logo-text"><p>Камень Памяти</p></a>
-                            </div>
-                            <div class="header-info__mobile-cart">
-                                <a href="#!"><img class="header-info__mobile-cart-search" src="images/search.svg"></a>
-                            </div>
-                            <div class="header-info__mobile-cart">
-                                <a href="#!"><img class="header-info__mobile-cart-img" src="images/mobile-cart1x.png" srcset="images/mobile-cart2x.png"></a>
-                            </div>
-                            <button class="closed"  onclick="unshow()"><img src="images/closed.svg"></button>
+                    <div class="header-mobile__phone-container">
+                        <div class="header-mobile__phone">
+                            <a href="#!" class="header-mobile__phone-number"><p>8 (8452) 71-17-12</p></a>
+                            <button class="header-mobile__phone-button"><span class="header-mobile__phone-call">Звонок</span></button>
                         </div>
-                        <ul class="header-mobile__menu">
-                            <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">О нас</a></li>
-                            <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">Оплата и доставка</a></li>
-                            <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">Установка</a></li>
-                            <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">Скидки</a></li>
-                            <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">Наши работы</a></li>
-                            <li class="header-mobile__menu-link"><a class="header-mobile__menu-text" href="#!">Контакты</a></li>
-                        </ul>
-                        <div class="header-mobile__menu-adress-container">
-                            <li class="header-mobile__menu-adress-text">г. Саратов, ул. Вольская, 68 <img class="triangle" src="images/dropdown1x.png" srcset="images/dropdown2x.png">
-                                <div class="header-mobile__menu-adress">
-                                    <a href="" class="header-info__dropdown-text">г. Саратов, ул. Вольская 68</a>
-                                    <a href="" class="header-info__dropdown-text">г. Саратов, ул. Рижская, 31а</a>
-                                    <a href="" class="header-info__dropdown-text">г. Энгельс, ул. Петровская, 57</a>
-                                    <a href="" class="header-info__dropdown-text">г. Вольск, ул. Водопьяного, 126</a>
-                                </div>
-                            </li>
-                        </div>
-                        <div class="header-mobile__phone-container">
-                            <div class="header-mobile__phone">
-                                <a href="#!" class="header-mobile__phone-number"><p>8 (8452) 71-17-12</p></a>
-                                <button class="header-mobile__phone-button"><span class="header-mobile__phone-call">Звонок</span></button>
-                            </div>
-                        </div>
-                      </div>
                     </div>
+                  </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="header-menu">
-        <div class="header-menu__block container">
-            <ul class="header-menu__container">
-                <li class="header-menu__link"><a class="header-menu__link-text" href="#!">О нас</a></li>
-                <li class="header-menu__link">
-                    <a class="header-menu__link-text" href="#!">Услуги <img class="header-menu__link-text-img" src="images/aikon1x.png" srcset="images/aikon2x.png"></a>
-                    <div class="header-menu__dropdown">
-                        <a href="" class="header-menu__dropdown-text">Памятники</a>
+<div class="header-menu">
+    <div class="header-menu__block container">
+        <ul class="header-menu__container">
+            <li class="header-menu__link"><a class="header-menu__link-text" href="#!">О нас</a></li>
+            <li class="header-menu__link">
+                <a class="header-menu__link-text" href="#!">Услуги <img class="header-menu__link-text-img" src="images/aikon1x.png" srcset="images/aikon2x.png"></a>
+                <div class="header-menu__dropdown">
+                    <a href="" class="header-menu__dropdown-text">Памятники</a>
+                    <div class="header-menu__dropdown-window">
                         <a href="" class="header-menu__dropdown-text">Мемориальные комплексы</a>    
-                            <div class="header-menu__dropdown-right">
-                                <a href="#!" class="header-menu__dropdown-text-right">Для одного захоронения</a>
-                                <a href="#!" class="header-menu__dropdown-text-right">Для семейных захоронений</a>
-                            </div>
-                        
-                        <a href="#!" class="header-menu__dropdown-text">Гравировка</a>
-                        <a href="#!" class="header-menu__dropdown-text">Благоустройство</a>
+                        <div class="header-menu__dropdown-right">
+                            <a href="#!" class="header-menu__dropdown-text-right">Для одного захоронения</a>
+                            <a href="#!" class="header-menu__dropdown-text-right">Для семейных захоронений</a>
+                        </div>
                     </div>
-                </li>
-                <li class="header-menu__link"><a class="header-menu__link-text" href="#!">Оплата и доставка</a></li>
-                <li class="header-menu__link"><a class="header-menu__link-text" href="#!">Установка</a></li>
-                <li class="header-menu__link"><a class="header-menu__link-text" href="#!">Скидки</a></li>
-                <li class="header-menu__link"><a class="header-menu__link-text" href="#!">Наши работы</a></li>
-                <li class="header-menu__link"><a class="header-menu__link-text" href="#!">Контакты</a></li>
-            </ul>
-            <div class="header-menu__cart">
-                <a class="header-menu__cart-text" href="#!"><p>Корзина</p></a>
-                <a href="#!"><img class="header-menu__cart-img" src="images/cart1px.png" srcset="images/cart2px.png"></a>
-            </div>
+                    <a href="#!" class="header-menu__dropdown-text">Гравировка</a>
+                    <a href="#!" class="header-menu__dropdown-text">Благоустройство</a>
+                </div>
+            </li>
+            <li class="header-menu__link"><a class="header-menu__link-text" href="#!">Оплата и доставка</a></li>
+            <li class="header-menu__link"><a class="header-menu__link-text" href="#!">Установка</a></li>
+            <li class="header-menu__link"><a class="header-menu__link-text" href="#!">Скидки</a></li>
+            <li class="header-menu__link"><a class="header-menu__link-text" href="#!">Наши работы</a></li>
+            <li class="header-menu__link"><a class="header-menu__link-text" href="#!">Контакты</a></li>
+        </ul>
+        <div class="header-menu__cart">
+            <a class="header-menu__cart-text" href="#!"><p>Корзина</p></a>
+            <a href="#!"><span class="header-menu__cart-img"></span></a>
         </div>
     </div>
+</div>
     
     <div class="about-us container">
-        <p class="about-us__page">Главная / О нас</p>
+        <p class="about-us__page"><a href="#!" class="about-us__page text">Главная</a> / <a href="#!" class="about-us__page text">О нас</a></p>
         <h2 class="about-us__title">О НАС</h2>
         <div class="about-us__content">
             <div class="about-us__content-container">
@@ -153,16 +154,15 @@
                     <div class="slider__controler">
                         <button 
                             onclick="prevSlide()"
-                            class="slider__controler-button"
+                            class="slider__controler-button-left"
                         >
-                            &lt;
                         </button>
             
                         <button 
                             onclick="nextSlide()"
-                            class="slider__controler-button"
+                            class="slider__controler-button-right"
                         >
-                            >
+                        
                         </button>
                     </div>
                     <div id="manager-slide" class="slider__slide"><img src="images/content-img1x.png" alt=""></div>
@@ -187,7 +187,7 @@
     <div class="footer">
         <div class="footer__info container">
             <div class="footer__info-container wraper">
-                <p class="footer__info-title">Камень памяти</p>
+                <a href="#!" class="footer__info-title text"><p">Камень памяти</p></a>
                 <div class="footer__info-wraper">
                     <div class="footer__info-container-text">
                         <a href="#!" class="footer__info-text"><p>г. Саратов, ул Вольская, 68</p></a>
@@ -245,7 +245,7 @@
         </div>
         <div class="footer__creater container">
             <a href="#!" class="footer__creater-text"><p>Политика конфиденциальности</p></a>
-            <p class="footer__creater-text">2021</p>
+            <p class="footer__creater-text-year ">2021</p>
             <a href="#!" class="footer__creater-text"><p>Сделано в Сайт-Креатив</p></a>
         </div>    
     </div>
