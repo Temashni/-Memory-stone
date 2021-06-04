@@ -1063,7 +1063,15 @@ justify-content: space-between;
     color: #000000;
 }
 
-@media screen and (max-width:768px) {
+.content-text:not(:first-child) {
+    margin-top: 25px;
+}
+
+._margin-text {
+    margin-top: 25px;
+}
+
+@media screen and (max-width:1250px) {
     .about-us__content-text{
         margin-top: 25px;
     }
