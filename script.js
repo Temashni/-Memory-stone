@@ -23,7 +23,7 @@ function prevSlide() {
 
 function updateMargin() {
     document.getElementById("manager-slide")
-        .style.marginLeft = indexActiveSlide * 600 * -1 + 'px';
+        .style.marginLeft = indexActiveSlide * 100 * -1 + '%';
 }
 
 function show(){ document.getElementById("modal").style.display="flex";
